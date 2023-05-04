@@ -22,7 +22,7 @@ title: Legitrack
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   THis is the discription
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/elite-data-dashboard-demo" # the subpath of your site, e.g. /blog
 url: "https://polarization-research-lab.github.io/elite-data-dashboard-demo/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
