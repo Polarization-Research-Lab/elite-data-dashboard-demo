@@ -18,6 +18,7 @@
 #main {
   padding: 0px;
   width: 100%;
+  min-width: 800px;
 }
 
 #profile-side {
@@ -108,7 +109,11 @@ outline-width: 0;
   font-size: 15px;
 }
 
-#discuss-rose-div {
+#discourse {
+  margin-left: auto;
+}
+
+#discourse-rose-div {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -116,7 +121,7 @@ outline-width: 0;
 /*  background-color: rgba(0, 0, 0, .2); border-radius: 20px;*/
 }
 
-#discuss-rose {
+#discourse-rose {
 /*  margin-right: 0px;*/
 }
 
