@@ -1,0 +1,223 @@
+---
+layout: home
+# Index page
+---
+
+<div id='main' class = 'row'>
+
+
+
+	<div id="profile-side" class="col-3 d-flex flex-column align-items-end">
+
+		<div class="profile-wrapper text-center">
+			<div id="avatar">
+			  <a href="" class="mx-auto">
+			      <img class='avatar-img' src="{{ site.url }}/assets/prototype/face.jpeg" alt="avatar" onerror="this.style.display='none'">
+			  </a>
+			</div>
+		</div>
+	<br>
+	<div class = '' id='profile-info'>
+		<h1 class = ''>Doe, Joeanne</h1>
+		<h3 class = 'profile-info-sub'>Independent of New Hampshire</h3>
+		<h3 class = 'profile-info-sub'>2nd Congressional District</h3>
+		<h3 class = 'profile-info-sub'>Serving since 2019</h3>
+	</div>
+
+	</div><!-- #sidebar -->
+
+
+	<div id='profile-main' class = 'col-9'>
+		
+
+		<div class="accordion" id="accordionPanelsStayOpenExample">
+
+
+
+
+		  <div class="accordion-item">
+		    <h1 class="accordion-header" id="panelsStayOpen-headingOne">
+		      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+		        What they say
+		      </button>
+		    </h1>
+		    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+		      <div class="accordion-body">
+
+		      	<div class = 'row'>
+
+		      		<div class = 'col-4'>
+		      			<h2 class = 'text-center'>Compared to their colleagues:</h2>
+				      	<div class = 'row say-card-div'>
+
+				      		<div class = 'col-6 say-card'>
+							  <canvas id='gauge1'></canvas>
+					          <script type="text/javascript" src="{{ site.sourceurl }}/assets/charts/gauge.js" data-canvasid="gauge1" data-gauge="20" data-max='100' data-color='green'></script>
+								<p class='text-center say-card-heading'>20th in <b>Bipartisan /<br>Compromising</b></p>
+				      		</div>
+				      		<div class = 'col-6 say-card'>
+							  <canvas id='gauge2'></canvas>
+					          <script type="text/javascript" src="{{ site.sourceurl }}/assets/charts/gauge.js" data-canvasid="gauge2" data-gauge="70" data-max='100' data-color='green'></script>
+								<p class='text-center say-card-heading'>70th in <b>Policy Discussion</b></p>
+				      		</div>
+
+				      	</div>
+
+				      	<div class = 'row say-card-div'>
+				      		<div class = 'col-6 say-card'>
+							  <canvas id='gauge3'></canvas>
+					          <script type="text/javascript" src="{{ site.sourceurl }}/assets/charts/gauge.js" data-canvasid="gauge3" data-gauge="90" data-max='100' data-color='darkred'></script>
+								<p class='text-center say-card-heading'>90th in <b>Insulting Language</b></p>
+				      		</div>
+				      		<div class = 'col-6 say-card'>
+							  <canvas id='gauge4'></canvas>
+					          <script type="text/javascript" src="{{ site.sourceurl }}/assets/charts/gauge.js" data-canvasid="gauge4" data-gauge="10" data-max='100' data-color='darkred'></script>
+								<p class='text-center say-card-heading'>10th in <b>Name Calling</b></p>
+				      		</div>
+
+				      	</div>
+			      	</div>
+
+		      		<div class = 'col-8' id=''>
+		      			<h2 class = 'text-center'>What they talk discuss</h2>
+				      		<div class = '' id='discuss-rose-div'>
+							  <canvas id='discuss-rose'></canvas>
+					          <script type="text/javascript" src="{{ site.sourceurl }}/assets/charts/rose.js" data-canvasid="discuss-rose"></script>
+				      		</div>
+		      		</div>
+
+		      	</div>
+
+
+		      </div>
+		    </div>
+		  </div>
+
+
+
+
+
+		  <div class="accordion-item">
+		    <h1 class="accordion-header " id="panelsStayOpen-headingTwo">
+		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+		        How they vote
+		      </button>
+		    </h1>
+		    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+		      <div class="accordion-body">
+	      		<h2 class='text-center'>Ideology</h2>
+		      	<div class = 'row', id='ideology-div'>
+		            <canvas id = "ideology"></canvas>
+			        <script type="text/javascript" src="{{ site.url }}/assets/charts/hist.js" data-canvasid="ideology"></script>
+		        </div>
+	      		<h2>Party Loyalty and Attendance</h2>
+		      	<div class = 'row'>
+		      		<table class = 'text-center'>
+					  <caption>Data from <a href='https://voteview.com'>voteview.com</a></caption>
+					  <thead>
+					    <tr>
+					      <th></th>
+					      <th>Doe</th>
+					      <th>House Median - Independent</th>
+					      <th>House Median</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>Votes Cast</td>
+					      <td>200</td>
+					      <td>200</td>
+					      <td>200</td>
+					    </tr>
+					    <tr>
+					      <td>Attendance</td>
+					      <td>100%</td>
+					      <td>100%</td>
+					      <td>100%</td>
+					    </tr>
+					    <tr>
+					      <td>Party Loyalty</td>
+					      <td>91%</td>
+					      <td>98%</td>
+					      <td>98%</td>
+					    </tr>
+					  </tbody>
+<!-- 					  <tfoot>
+					    <tr>
+					      <td></td>
+					      <td></td>
+					      <td></td>
+					    </tr>
+					  </tfoot> -->
+					</table>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+
+
+
+
+		  <div class="accordion-item">
+		    <h1 class="accordion-header" id="panelsStayOpen-headingThree">
+		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+		       	Their legislative effectiveness
+		      </button>
+		    </h1>
+		    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+		      <div class="accordion-body">
+		      		<table class = 'text-center'>
+					  <caption>Data from <a href='https://thelawmakers.org/'>Center for Effective Lawmaking</a></caption>
+					  <thead>
+					    <tr>
+					      <th></th>
+					      <th>Sponsored</th>
+					      <th>Committee Action</th>
+					      <th>Action on the Floor</th>
+					      <th>Passed</th>
+					      <th>Made Law</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>Substantive Bills</td>
+					      <td>12</td>
+					      <td>0</td>
+					      <td>0</td>
+					      <td>0</td>
+					      <td>0</td>
+					    </tr>
+					  </tbody>
+<!-- 					  <tfoot>
+					    <tr>
+					      <td></td>
+					      <td></td>
+					      <td></td>
+					    </tr>
+					  </tfoot> -->
+					</table>
+		      </div>
+		    </div>
+		  </div>
+
+
+
+
+
+		</div>
+
+
+	</div>
+	
+
+
+</div>
+
+
+
+
+
+
+
+
+
