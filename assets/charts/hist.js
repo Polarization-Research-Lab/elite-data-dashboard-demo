@@ -37,6 +37,7 @@ function build () {
         maintainAspectRatio: false,
         scales: {
           x: {
+            grid: { display: false },
             display: true,
             ticks: {
               // minRotation: 0,
@@ -48,6 +49,8 @@ function build () {
             },
           },
           y: {
+            grid: { display: false },
+            ticks: { display: false },
             // ticks: {
               // beginAtZero: true
             // },
