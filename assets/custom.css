@@ -83,7 +83,7 @@
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 1);
   border-color: rgba(0,0,0,0);
-outline-width: 0;
+  outline-width: 0;
 }
 
 .accordion-body {
@@ -101,13 +101,51 @@ outline-width: 0;
   width: 100%;
 }
 
+
 .say-card {
   width: 50%;
+  transition: transform 0.2s ease-in-out;
 /*  height: 100px;*/
+}
+
+.say-card:hover {
+  transform: scale(1.2);
 }
 
 .say-card-heading {
   font-size: 15px;
+}
+
+.say-card-child {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -30%;
+  left: 100%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+  transition: opacity .3s ease-in-out, visibility 0s linear 0.5s;
+  border-radius: 30px;
+/*  color: white;*/
+}
+
+.say-card:hover .say-card-child {
+  opacity: .99;
+  transition-delay: 1s;
+  visibility: visible;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.say-card-child-quote {
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.say-card-child-plot {
+  padding: 20px;
 }
 
 #discourse {
@@ -148,7 +186,11 @@ outline-width: 0;
 
 
 
-
+.card-child {
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  margin: 10px;*/
+}
 
 
 

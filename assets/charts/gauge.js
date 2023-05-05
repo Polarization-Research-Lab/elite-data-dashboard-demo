@@ -15,21 +15,24 @@ function build () {
         labels: [],
         datasets: [{
           label: '# of Votes',
-          data: [0, value, max - value],
-          backgroundColor: ['Grey', document.currentScript.getAttribute('data-color')]
+          data: [value - 3, 6, max - value - 3],
+          needleValue: value,
+          // data: [5,10,20],
+          // backgroundColor: ['Grey', document.currentScript.getAttribute('data-color')]
+          backgroundColor: ['Grey', 'Teal', 'Grey'],
           // min: 0,
-          // max: 100,
+          max: 100,
         }]
       },
       options: {
         rotation: 270, // start angle in degrees
         circumference: 180, // sweep angle in degrees
         // maintainAspectRatio: false,
-        responsive: true,
+        // responsive: true,
         plugins: {
           tooltip: {
             enabled: false
-          }
+          },
         }
       }
     }

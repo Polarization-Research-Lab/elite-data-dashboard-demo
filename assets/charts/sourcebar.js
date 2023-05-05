@@ -7,13 +7,18 @@ function build () {
   const chart = new Chart(
     ctx,
     {
-      type: 'polarArea',
+      type: 'bar',
       data: {
-        labels: ['Insulting Language', 'Name Calling', 'Anger', 'Blaming the Other Side', 'Policy Discussion', 'Bipartisan Compromise'],
+        labels: ['Twitter', 'Floor Speeches', 'Newsletters', 'Public Statements'],
         datasets: [
           {
-            label: 'Dataset 1',
-            data: [10, 20, 30, 15, 5, 20],
+            label: '_',
+            data: [
+              Math.floor(Math.random() * 30) + 1,
+              Math.floor(Math.random() * 30) + 1,
+              Math.floor(Math.random() * 30) + 1,
+              Math.floor(Math.random() * 30) + 1,
+            ],
           }
         ]
       },
@@ -21,20 +26,26 @@ function build () {
         responsive: true,
         maintainAspectRatio: false,
         scales: {
-          r: {
-            pointLabels: {
-              display: true,
-              centerPointLabels: true,
-              font: {
-                size: 12
-              }
-            },
-            max: 40,
+          y: {
             ticks: {
               callback: function(value, index, values) {
-                return value + '%'; // modify the callback to add the percentage symbol
-              }
-            }
+                  if (value === 0) {
+                      return value.toString() + '%';
+                  } else if (value === 100) {
+                      return value.toString() + '%';
+                  } else {
+                      return '';
+                  }
+              },
+            },
+            max: 100,
+            min: 0,
+            suggestedMax: 100,
+            maxTicksLimit: 10,
+            grid: {display: false}
+          },
+          x: {
+            grid: {display: false}
           }
         },
         plugins: {
