@@ -1,0 +1,10 @@
+- [x] make senator instead of congressional
+-  make the settings a little more realistic
+	- [x] 20th 70th to 20th & 30th
+	- [x] 90th and 95th
+- [x] instead of red and green; teal
+- [x] drill down on each source
+- [ ] change rose plot to percentages
+- [x] drill down to see examples
+	- [x] policy discussion
+- [x] https links for the dashboard
