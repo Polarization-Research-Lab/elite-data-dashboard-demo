@@ -9,11 +9,11 @@ function build () {
     {
       type: 'polarArea',
       data: {
-        labels: ['Insulting Language', 'Name Calling', 'Anger', 'Blaming the Other Side', 'Policy Discussion', 'Bipartisan Compromise'],
+        labels: ['Insulting Language', 'Blame the other side', 'Credit Claiming', 'Compromising Language', 'Policy Discussion', 'Legislative Discussion', 'Foreign Policy'],
         datasets: [
           {
             label: 'Dataset 1',
-            data: [10, 20, 30, 15, 5, 20],
+            data: [10, 20, 30, 15, 25, 20, 17],
           }
         ]
       },
